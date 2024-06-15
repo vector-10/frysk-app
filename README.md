@@ -1,3 +1,18 @@
+# frysk-app
+A frontend for the frysk dApp on the Frax L2 chain.
+1. A vault
+2. A DEX
+3. A Bridge
+A yield platform with a DEX, vault and a bridge.
+
+Landing page UI - https://artio.berps.berachain.com/
+DEX and Vault UI - https://syncswap.xyz/
+
+
+
+
+
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
