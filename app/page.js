@@ -14,7 +14,7 @@ export default function Home() {
       <button className="text-white border rounded-sm py-2 px-5 mx-3 cursor-pointer transition duration-300 ease-in-out hover:text-blue-400">
       Connect Wallet
       </button>           
-      <button className="text-[#0b1120] font-bold bg-white border rounded-sm py-2 px-5 mx-3 cursor-pointer transition duration-300 ease-in-out hover:text-blue-400">
+      <button className="text-[#0b1120] font-bold bg-white border rounded-sm py-2 px-5 mx-3 cursor-pointer transition duration-300 ease-in-out">
       Explore Markets
       </button>           
     
