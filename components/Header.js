@@ -2,7 +2,7 @@
 import React, {useState} from 'react';
 import Link from 'next/link';
 import Image from 'next/image'
-import { MdNotificationsActive } from "react-icons/md";
+import { SiWalletconnect } from "react-icons/si";
 import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
 
 const Header = () => {
@@ -18,7 +18,7 @@ const Header = () => {
         >
             {isOpen ? <AiOutlineClose fontSize={25} /> : <AiOutlineMenu fontSize={25} />}
         </button>
-        <div className="logo-name wiggly flex text-white cursor-pointer space-x-6">
+        <div className="logo-name wiggly flex text-white cursor-pointer space-x-4">
         <h1 className='hover:scale-75 hover:rotate-12 transition duration-500 ease-in-out text-4xl'>Frysk</h1> 
 
          <div className='flex bg-white text-[#1c2337] py-1 px-2 rounded-2xl space-x-2'>
@@ -31,10 +31,10 @@ const Header = () => {
         {/* end of div 1 and start of div 2 */}
         <div className='app-links hidden md:flex justify-between  items-center text-lg'>
            
-           <div className='flex items-center text-lg'>
-            <Link className='wiggly border mx-4 text-white py-1.5 px-5 transition duration-500 ease-in-out hover:text-blue-600' href="/test">Stake</Link>
-            <div className='flex bg-white text-[#1c2337] py-0.5 px-1.5 rounded-2xl space-x-2 iuk'>
-                <Link className="wiggly transition duration-500 ease-in-out hover:bg-[#1c2337] hover:text-white rounded-xl py-0.5 px-2.5 " href="/steeze-board">Connect Wallet</Link>
+           <div className='flex items-center text-lg space-x-4'>
+            <Link className='wiggly border text-white py-1.5 px-5 transition duration-500 ease-in-out hover:text-blue-600' href="/test">Stake</Link>
+            <div className='flex bg-white text-[#1c2337] py-0.5 px-1.5 rounded-2xl space-x-2 '>
+                <button className="wiggly transition duration-500 ease-in-out hover:bg-[#1c2337] hover:text-white rounded-xl py-0.5 px-2.5 flex items-center space-x-2" ><p>Connect Wallet</p> <SiWalletconnect /> </button>
             </div>
            </div>
         </div>
