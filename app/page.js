@@ -20,7 +20,7 @@ export default function Home() {
         Explore Markets
         </button>        
       </div>
-      <div class="grid grid-cols-3 divide-x text-lg mt-[12rem] border mx-[10rem] md:mx-[14rem] h-[7rem] bg-black text-white rounded-lg shadow-lg shadow-[#FFB07C]">
+      <div class="grid grid-cols-3 divide-x text-lg mt-[12rem] border mx-[10rem] md:mx-[14rem] h-[7rem] bg-black text-white rounded-lg shadow-lg shadow-[#ffb07c9e]">
           <div className='flex justify-center items-center rounded-sm cursor-pointer '>           
            <p className='font-bold wiggly'>1</p>
           </div>
@@ -32,9 +32,9 @@ export default function Home() {
           </div>          
         </div>
 
-        <section className='flex justify-center text-white mt-[8rem]'>
-          <h1> <span>Maximum</span> Stakes <br/> <span>Surplus</span> Yields!</h1>
-          <p></p>
+        <section className='flex flex-col justify-center items-center text-white mt-[10rem] font-bold text-center'>
+          <h1 className='text-5xl'> <span className='text-[#FFB07C]'>Maximum</span> Stakes <br/> <span className='text-[#FFB07C]'>Surplus</span> Yields!</h1>
+          <p className='regular text-sm mt-[2rem]'> Featuring a variety of assets from across EVM and Cosmos, with new assets added regularly</p>
         </section>
     </div>
     </main>
