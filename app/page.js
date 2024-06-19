@@ -7,7 +7,7 @@ export default function Home() {
   return (
     <main className="overflow-y-auto min-h-screen flex flex-col bg-[#0b1120]">
       <Header />
-      <section className="hero-section flex flex-col text-center justify-center mt-[12rem]">
+      <section className="hero-section flex flex-col text-center justify-center mt-[16rem]">
         <h1 className="text-5xl text-white font-bold "><span className='text-[#FFB07C]'>Stake</span> and Earn Yields on <span className='text-[#FFB07C]'>Frysk</span> <br/> built on the L2 frax chain.</h1>
         <p className="text-gray-300 mt-4 text-md regular">Frysk enables you to Stake and Earn Maximun Yields <br /> through the Frax Protocol on the L2 Frax Blockchain in a seamless, pain free process.</p>        
       </section>      
@@ -19,17 +19,17 @@ export default function Home() {
         Explore Markets
         </button>        
       </div>
-      <section className='second-section mt-[12rem] mx-[16rem] text-white flex justify-around border rounded-sm  items-center'>
-        <div className=''>
-          1
+      <div class="grid grid-cols-3 divide-x text-sm mt-[12rem] border mx-[10rem] md:mx-[14rem] md:p-[3rem] p-[1rem] rounded-md">
+          <div className='rounded-sm cursor-pointer'>           
+           <p className='font-bold text-[#1c2337] wiggly'>1</p>
+          </div>
+          <div className='rounded-sm  cursor-pointer'>           
+           <p className='font-bold text-[#1c2337] wiggly'>2</p>
+          </div>
+          <div className=' rounded-sm  cursor-pointer'>          
+           <p className='font-bold text-[#1c2337] wiggly'>3</p>
+          </div>          
         </div>
-        <div>
-          2
-        </div>
-        <div>
-          3
-        </div>
-      </section>
     </main>
   );
 }
