@@ -9,7 +9,7 @@ const Header = () => {
     const [isOpen, setIsOpen] = useState(false);
     const [toggleMenu, setToggleMenu] = useState(false);
   return (
-    <div className='fixed w-full px-[2rem] h-[4rem] flex items-center justify-between shadow-md border-white'>
+    <div className='fixed w-full px-[2rem] h-[4rem] flex items-center justify-between border-b bg-black '>
          {/* Hamburger Menu for mobile devices*/}
          <button 
             className='md:hidden text-white transition duration-500 ease-in-out' 
