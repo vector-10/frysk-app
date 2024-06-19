@@ -19,17 +19,22 @@ export default function Home() {
         Explore Markets
         </button>        
       </div>
-      <div class="grid grid-cols-3 divide-x text-sm mt-[12rem] border mx-[10rem] md:mx-[14rem] md:p-[3rem] p-[1rem] rounded-md">
-          <div className='rounded-sm cursor-pointer'>           
-           <p className='font-bold text-[#1c2337] wiggly'>1</p>
+      <div class="grid grid-cols-3 divide-x text-lg mt-[12rem] border mx-[10rem] md:mx-[14rem] h-[7rem] text-white rounded-lg">
+          <div className='rounded-sm cursor-pointer '>           
+           <p className='font-bold wiggly'>1</p>
           </div>
           <div className='rounded-sm  cursor-pointer'>           
-           <p className='font-bold text-[#1c2337] wiggly'>2</p>
+           <p className='font-bold wiggly'>2</p>
           </div>
           <div className=' rounded-sm  cursor-pointer'>          
-           <p className='font-bold text-[#1c2337] wiggly'>3</p>
+           <p className='font-bold wiggly'>3</p>
           </div>          
         </div>
+
+        <section>
+          <h1></h1>
+          <p></p>
+        </section>
     </main>
   );
 }
