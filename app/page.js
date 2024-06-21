@@ -5,6 +5,10 @@ import { SiWalletconnect } from "react-icons/si";
 import { FaDiscord } from "react-icons/fa";
 import { FaTelegram } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
+import { FaVault } from "react-icons/fa6";
+import { FaBridgeCircleCheck } from "react-icons/fa6";
+import { IoPieChartSharp } from "react-icons/io5";
+import { GiWallet } from "react-icons/gi";
 
 export default function Home() {
   return (
@@ -26,17 +30,17 @@ export default function Home() {
       <div class="grid grid-cols-3 divide-x text-lg mt-[10rem] regular text-center border mx-[4rem] md:mx-[14rem] h-[7rem] bg-black text-white rounded-lg shadow-lg shadow-[#ffb07c9e]">
           <div className='flex flex-col justify-center items-center rounded-sm cursor-pointer '>           
            <p className='text-xs'>Trading Volume</p>
-           <p className='font-bold wiggly text-4xl'>3,000,000</p>
+           <p className='font-bold wiggly md:text-4xl text-md'>3,000,000</p>
            <p className='text-xs'>In the Last 24 Hours</p>
           </div>
           <div className='flex flex-col justify-center items-center rounded-sm  cursor-pointer'>           
           <p className='text-xs'>Staking Volume</p>
-           <p className='font-bold wiggly text-4xl'>5,000,000</p>
+           <p className='font-bold wiggly md:text-4xl text-md'>5,000,000</p>
            <p className=' text-xs'>Currently Open</p>
           </div>
           <div className='flex flex-col justify-center items-center rounded-sm  cursor-pointer'>          
           <p className=' text-xs'>Open Liquidity</p>
-           <p className='font-bold wiggly text-4xl'>20</p>
+           <p className='font-bold wiggly md:text-4xl text-md'>20</p>
            <p className=' text-xs'>In the Last 24 Hours</p>
           </div>          
         </div>
@@ -47,14 +51,14 @@ export default function Home() {
         </section>
     </div>
 
-    <div className='flex md:flex-row flex-col text-white justify-center space-x-28 mb-[10rem]'>
+    <div className='flex md:flex-row flex-col text-white justify-center items-center space-x-28 mb-[10rem]'>
       <div className='grid grid-cols-2 grid-rows-2 gap-[2rem] font-bold wiggly text-3xl text-center '>
-        <p className='border md:p-[6rem] p-[4rem] bg-black rounded-lg shadow-lg shadow-[#ffb07c9e]'>1</p>
-        <p className='border md:p-[6rem] p-[4rem] bg-black rounded-lg shadow-lg shadow-[#ffb07c9e]'>2</p>
-        <p className='border md:p-[6rem] p-[4rem] bg-black rounded-lg shadow-lg shadow-[#ffb07c9e]'>3</p>
-        <p className='border md:p-[6rem] p-[4rem] bg-black rounded-lg shadow-lg shadow-[#ffb07c9e]'>4</p>        
+        <p className='border md:p-[6rem] p-[4rem] bg-black rounded-lg shadow-lg shadow-[#ffb07c9e]'><FaVault /></p>
+        <p className='border md:p-[6rem] p-[4rem] bg-black rounded-lg shadow-lg shadow-[#ffb07c9e]'><FaBridgeCircleCheck /></p>
+        <p className='border md:p-[6rem] p-[4rem] bg-black rounded-lg shadow-lg shadow-[#ffb07c9e]'><IoPieChartSharp /></p>
+        <p className='border md:p-[6rem] p-[4rem] bg-black rounded-lg shadow-lg shadow-[#ffb07c9e]'><GiWallet /> </p>        
       </div>
-      <div className='text flex flex-col justify-center text-center'>
+      <div className='text flex flex-col justify-center items-center'>
         <h1 className='text-5xl font-bold mb-4 mt-16 '>Lock up Your <br /> <span className='text-[#FFB07C]'>Assets in Vaults</span> </h1>
         <p className='regular text-sm'>Obtain Maximum returns per Hour, Increase earning potential <br /> and ensured stability with our stable pairs</p>
       </div>
