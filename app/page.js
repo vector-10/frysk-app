@@ -23,20 +23,20 @@ export default function Home() {
         Explore Markets
         </button>        
       </div>
-      <div class="grid grid-cols-3 divide-x text-lg mt-[12rem] regular text-center border mx-[4rem] md:mx-[14rem] h-[7rem] bg-black text-white rounded-lg shadow-lg shadow-[#ffb07c9e]">
+      <div class="grid grid-cols-3 divide-x text-lg mt-[10rem] regular text-center border mx-[4rem] md:mx-[14rem] h-[7rem] bg-black text-white rounded-lg shadow-lg shadow-[#ffb07c9e]">
           <div className='flex flex-col justify-center items-center rounded-sm cursor-pointer '>           
            <p className='text-xs'>Trading Volume</p>
-           <p className='font-bold wiggly text-4xl'>1</p>
+           <p className='font-bold wiggly text-4xl'>3,000,000</p>
            <p className='text-xs'>In the Last 24 Hours</p>
           </div>
           <div className='flex flex-col justify-center items-center rounded-sm  cursor-pointer'>           
           <p className='text-xs'>Staking Volume</p>
-           <p className='font-bold wiggly text-4xl'>1</p>
+           <p className='font-bold wiggly text-4xl'>5,000,000</p>
            <p className=' text-xs'>Currently Open</p>
           </div>
           <div className='flex flex-col justify-center items-center rounded-sm  cursor-pointer'>          
           <p className=' text-xs'>Open Liquidity</p>
-           <p className='font-bold wiggly text-4xl'>1</p>
+           <p className='font-bold wiggly text-4xl'>20</p>
            <p className=' text-xs'>In the Last 24 Hours</p>
           </div>          
         </div>
@@ -47,7 +47,7 @@ export default function Home() {
         </section>
     </div>
 
-    <div className='flex md:flex-row flex-col text-white justify-center space-x-28 '>
+    <div className='flex md:flex-row flex-col text-white justify-center space-x-28 mb-[10rem]'>
       <div className='grid grid-cols-2 grid-rows-2 gap-[2rem] font-bold wiggly text-3xl text-center '>
         <p className='border md:p-[6rem] p-[4rem] bg-black rounded-lg shadow-lg shadow-[#ffb07c9e]'>1</p>
         <p className='border md:p-[6rem] p-[4rem] bg-black rounded-lg shadow-lg shadow-[#ffb07c9e]'>2</p>
@@ -61,22 +61,26 @@ export default function Home() {
     </div>
 
     <footer className='text-white mt-[4rem] bg-black h-[12rem] regular'>
-      <div className='border-b flex justify-around items-center h-[9rem] '>
+      <div className='border-b flex flex-col md:flex-row justify-around items-center h-[9rem] '>
         <div className='logo-name'>
          <h1 className='hover:scale-75 transition duration-500 ease-in-out text-4xl wiggly'>Frysk</h1>
          <p className=' text-xs'>Increasing finance leverage on the Frax ecosystem</p>
         </div>
-        <div className='logo-name'>
+        <div className='logo-name hidden lg:block'>
          <p className='font-bold wiggly text-xl'>Services</p>
          <ul><li>Home</li> <li>Vault</li> <li>Bridge</li> </ul>
         </div>
-        <div className='logo-name'>
+        <div className='logo-name hidden lg:block'>
          <p className='font-bold wiggly text-xl'>Resources</p>
          <ul><li>Docs</li> <li>Sponsors</li> <li>About Frax</li> </ul>
         </div>
-        <div className='logo-name'>
+        <div className='logo-name hidden lg:block'>
          <p className='font-bold wiggly text-xl'>Social Media</p>
-         <ul ><li><FaDiscord /></li> <li><FaTelegram /></li> <li><FaXTwitter /></li> </ul>
+         <ul>
+          <li><FaDiscord /></li>
+          <li><FaTelegram /></li>
+          <li><FaXTwitter /></li>
+         </ul>
         </div>
       </div>
       <p className='text-center flex flex-col justify h-1 font-bold'>Copyright 2024 - All Rights Reserved</p>      
