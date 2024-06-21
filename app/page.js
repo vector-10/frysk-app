@@ -2,6 +2,9 @@
 import React from 'react';
 import Header from "../components/Header";
 import { SiWalletconnect } from "react-icons/si";
+import { FaDiscord } from "react-icons/fa";
+import { FaTelegram } from "react-icons/fa";
+import { FaXTwitter } from "react-icons/fa6";
 
 export default function Home() {
   return (
@@ -20,7 +23,7 @@ export default function Home() {
         Explore Markets
         </button>        
       </div>
-      <div class="grid grid-cols-3 divide-x text-lg mt-[12rem] regular text-center border mx-[8rem] md:mx-[14rem] h-[7rem] bg-black text-white rounded-lg shadow-lg shadow-[#ffb07c9e]">
+      <div class="grid grid-cols-3 divide-x text-lg mt-[12rem] regular text-center border mx-[4rem] md:mx-[14rem] h-[7rem] bg-black text-white rounded-lg shadow-lg shadow-[#ffb07c9e]">
           <div className='flex flex-col justify-center items-center rounded-sm cursor-pointer '>           
            <p className='text-xs'>Trading Volume</p>
            <p className='font-bold wiggly text-4xl'>1</p>
@@ -40,22 +43,44 @@ export default function Home() {
 
         <section className='flex flex-col justify-center items-center text-white mt-[10rem] mb-[10rem] font-bold text-center'>
           <h1 className='text-5xl'> <span className='text-[#FFB07C]'>Surplus</span> Yields <br/> <span className='text-[#FFB07C]'>Maximum</span> Stakes!</h1>
-          <p className='regular text-sm mt-[2rem]'> Featuring a variety of assets from across EVM and Cosmos, with new assets added regularly</p>
+          <p className='regular mt-[2rem]'> Featuring a variety of assets from across EVM and Cosmos, with new assets added regularly</p>
         </section>
     </div>
 
-    <div className='flex text-white justify-center'>
-      <div className='grid grid-cols-2 grid-rows-2 gap-[16rem] p-4 shadow-lg rounded-lg'>
-        <p>1</p>
-        <p>2</p>
-        <p>3</p>
-        <p>4</p>        
+    <div className='flex md:flex-row flex-col text-white justify-center space-x-28 '>
+      <div className='grid grid-cols-2 grid-rows-2 gap-[2rem] font-bold wiggly text-3xl text-center '>
+        <p className='border md:p-[6rem] p-[4rem] bg-black rounded-lg shadow-lg shadow-[#ffb07c9e]'>1</p>
+        <p className='border md:p-[6rem] p-[4rem] bg-black rounded-lg shadow-lg shadow-[#ffb07c9e]'>2</p>
+        <p className='border md:p-[6rem] p-[4rem] bg-black rounded-lg shadow-lg shadow-[#ffb07c9e]'>3</p>
+        <p className='border md:p-[6rem] p-[4rem] bg-black rounded-lg shadow-lg shadow-[#ffb07c9e]'>4</p>        
       </div>
-      <div className='text flex flex '>
-        <h1>Lock up Your Assets</h1>
-        <p className='m'></p>
+      <div className='text flex flex-col justify-center text-center'>
+        <h1 className='text-5xl font-bold mb-4 mt-16 '>Lock up Your <br /> <span className='text-[#FFB07C]'>Assets in Vaults</span> </h1>
+        <p className='regular text-sm'>Obtain Maximum returns per Hour, Increase earning potential <br /> and ensured stability with our stable pairs</p>
       </div>
     </div>
+
+    <footer className='text-white mt-[4rem] bg-black h-[12rem] regular'>
+      <div className='border-b flex justify-around items-center h-[9rem] '>
+        <div className='logo-name'>
+         <h1 className='hover:scale-75 transition duration-500 ease-in-out text-4xl wiggly'>Frysk</h1>
+         <p className=' text-xs'>Increasing finance leverage on the Frax ecosystem</p>
+        </div>
+        <div className='logo-name'>
+         <p className='font-bold wiggly text-xl'>Services</p>
+         <ul><li>Home</li> <li>Vault</li> <li>Bridge</li> </ul>
+        </div>
+        <div className='logo-name'>
+         <p className='font-bold wiggly text-xl'>Resources</p>
+         <ul><li>Docs</li> <li>Sponsors</li> <li>About Frax</li> </ul>
+        </div>
+        <div className='logo-name'>
+         <p className='font-bold wiggly text-xl'>Social Media</p>
+         <ul ><li><FaDiscord /></li> <li><FaTelegram /></li> <li><FaXTwitter /></li> </ul>
+        </div>
+      </div>
+      <p className='text-center flex flex-col justify h-1 font-bold'>Copyright 2024 - All Rights Reserved</p>      
+    </footer>
     </main>
-  );
+  ); 
 }
