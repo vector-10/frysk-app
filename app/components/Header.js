@@ -34,7 +34,7 @@ const Header = () => {
            <div className='flex items-center text-lg space-x-4'>
             <Link className='wiggly border text-white py-1.5 px-5 transition duration-500 ease-in-out hover:text-blue-600' href="/test">Stake</Link>
             <div className='flex bg-white text-[#1c2337] py-1 px-1.5 rounded-md space-x-2 '>
-                <button className="wiggly transition duration-500 ease-in-out hover:bg-black  hover:text-white rounded-md py-0.5 px-2.5 flex items-center space-x-2" ><p>Connect Wallet</p> <SiWalletconnect /> </button>
+                <button className="wiggly transition duration-500 ease-in-out hover:bg-black  hover:text-white rounded-md py-0.5 px-2.5 flex items-center space-x-2" ><p>Connect</p> <SiWalletconnect /> </button>
             </div>
            </div>
         </div>

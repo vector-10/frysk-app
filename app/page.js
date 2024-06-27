@@ -1,6 +1,6 @@
 "use client"
 import React from 'react';
-import Header from "../components/Header";
+import Header from "./components/Header"
 import { SiWalletconnect } from "react-icons/si";
 import { FaDiscord } from "react-icons/fa";
 import { FaTelegram } from "react-icons/fa";
@@ -67,27 +67,27 @@ export default function Home() {
     <footer className='text-white mt-[4rem] bg-black h-[12rem] wiggly'>
       <div className='border-b flex flex-col md:flex-row justify-around items-center h-[9rem] '>
         <div className='logo-name'>
-         <h1 className='hover:scale-75 transition duration-500 ease-in-out text-4xl wiggly'>Frysk</h1>
+         <h1 className=' text-4xl wiggly'>Frysk</h1>
          <p className=' text-xs'>Increasing finance leverage on the Frax ecosystem</p>
         </div>
         <div className='logo-name hidden lg:block'>
          <p className='font-bold wiggly text-xl'>Services</p>
-         <ul><li>Home</li> <li>Vault</li> <li>Bridge</li> </ul>
+         <ul className='text-sm'><li>Home</li> <li>Vault</li> <li>Bridge</li> </ul>
         </div>
         <div className='logo-name hidden lg:block'>
          <p className='font-bold wiggly text-xl'>Resources</p>
-         <ul><li>Docs</li> <li>Sponsors</li> <li>About Frax</li> </ul>
+         <ul className='text-sm'><li>Docs</li> <li>Sponsors</li> <li>About Frax</li> </ul>
         </div>
         <div className='logo-name hidden lg:block'>
          <p className='font-bold wiggly text-xl'>Social Media</p>
-         <ul>
+         <ul className='text-sm'>
           <li><FaDiscord /></li>
           <li><FaTelegram /></li>
           <li><FaXTwitter /></li>
          </ul>
         </div>
       </div>
-      <p className='text-center flex flex-col justify h-1 font-bold'>Copyright 2024 - All Rights Reserved</p>      
+      <p className='text-center flex flex-col justify h-1 '>Copyright 2024 - All Rights Reserved</p>      
     </footer>
     </main>
   ); 
