@@ -30,17 +30,17 @@ export default function Home() {
       <div class="grid grid-cols-3 divide-x text-lg mt-[10rem] wiggly text-center border mx-[4rem] md:mx-[14rem] h-[10rem] bg-black text-white rounded-lg shadow-lg shadow-[#ffb07c9e]">
           <div className='flex flex-col justify-center items-center rounded-sm cursor-pointer '>           
            <p className='text-xs'>Trading Volume</p>
-           <p className='font-bold wiggly md:text-4xl text-md'>3,000,000</p>
+           <p className='font-bold wiggly md:text-4xl text-lg'>3,000,000</p>
            <p className='text-xs'>In the Last 24 Hours</p>
           </div>
           <div className='flex flex-col justify-center items-center rounded-sm  cursor-pointer'>           
           <p className='text-xs'>Staking Volume</p>
-           <p className='font-bold wiggly md:text-4xl text-md'>5,000,000</p>
+           <p className='font-bold wiggly md:text-4xl text-lg'>5,000,000</p>
            <p className=' text-xs'>Currently Open</p>
           </div>
           <div className='flex flex-col justify-center items-center rounded-sm  cursor-pointer'>          
           <p className=' text-xs'>Open Liquidity</p>
-           <p className='font-bold wiggly md:text-4xl text-md'>20</p>
+           <p className='font-bold wiggly md:text-4xl text-lg'>20</p>
            <p className=' text-xs'>In the Last 24 Hours</p>
           </div>          
         </div>
@@ -87,7 +87,7 @@ export default function Home() {
          </ul>
         </div>
       </div>
-      <p className='text-center flex flex-col justify h-1 '>Copyright 2024 - All Rights Reserved</p>      
+      <p className='text-center flex flex-col text-xs justify h-1 '>Copyright 2024 - All Rights Reserved</p>      
     </footer>
     </main>
   ); 
