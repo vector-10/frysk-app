@@ -10,6 +10,7 @@ import { FaVault } from "react-icons/fa6";
 import { FaBridgeCircleCheck } from "react-icons/fa6";
 import { IoPieChartSharp } from "react-icons/io5";
 import { GiWallet } from "react-icons/gi";
+import { FaDoorOpen } from "react-icons/fa6";
 
 export default function Home() {
       // to handle the event for connect wallet
@@ -30,15 +31,16 @@ export default function Home() {
       <Header />
     <div className="overflow-y-auto min-h-screen flex flex-col ">      
       <section className="hero-section flex flex-col text-center justify-center mt-[16rem]">
-        <h1 className=" text-4xl md:text-5xl text-white font-bold "><span className='text-[#FFB07C]'>Stake</span> and Earn Yields on <span className='text-[#FFB07C]'>Frysk</span> <br/> built on the L2 frax chain.</h1>
-        <p className="text-gray-300 mt-4 text-xs md:text-lg">Frysk enables you to Stake and Earn Maximun Yields <br /> through the Frax Protocol on the L2 Frax Blockchain in a seamless, pain free process.</p>        
+        <h1 className=" text-4xl md:text-5xl text-white font-bold "><span className='text-[#FFB07C]'>Stake</span> and Earn Yields on <span className='text-[#FFB07C]'>FryskVault</span> <br/> built on the Fraxtal chain.</h1>
+        <p className="text-gray-300 mt-4 text-xs md:text-lg">Frysk enables you to Stake and Earn Maximun Yields <br /> on the Fraxtal Layer 2 Blockchain in a seamless, pain free process. 
+        </p>        
       </section>      
       <div className="action-buttons flex justify-center mt-10 text-lg space-x-4 wiggly">
         <button onClick={connectWalletHandler} className="text-white border rounded-sm py-2 px-2 cursor-pointer transition duration-300 ease-in-out hover:text-blue-400 flex items-center space-x-2">
         <p>Connect Wallet</p> <SiWalletconnect />  
         </button>           
-        <button className="text-[#0b1120] font-bold bg-[#FFB07C] rounded-sm py-2 px-3 cursor-pointer transition duration-300 ease-in-out hover:text-white">
-        Explore Markets
+        <button className="text-[#0b1120] flex justify-center font-bold bg-[#FFB07C] space-x-4 rounded-sm py-2 px-5 cursor-pointer transition duration-400 ease-in-out hover:text-white">
+        <p>Go to App</p> <FaDoorOpen />
         </button>        
       </div>
       <div class="grid grid-cols-3 divide-x text-lg mt-[10rem] wiggly text-center border mx-[4rem] md:mx-[14rem] h-[10rem] bg-black text-white rounded-lg shadow-lg shadow-[#ffb07c9e]">

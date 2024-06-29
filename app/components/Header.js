@@ -43,9 +43,9 @@ const Header = () => {
         <h1 className='text-4xl'>Frysk</h1> 
 
          <div className='md:flex text-white py-1 px-2 rounded-md space-x-8 hidden'>
-                <Link className="transition duration-500 ease-in-out hover:bg-[#161c2c] py-1 px-2 hover:text-white rounded-md" href="/">Home</Link>
-                <Link className="transition duration-500 ease-in-out hover:bg-[#161c2c] py-1 px-2 hover:text-white rounded-md" href="/vault">Vault</Link>
-                <Link className="transition duration-500 ease-in-out hover:bg-[#161c2c] py-1 px-2 hover:text-white rounded-md" href="/bridge">Bridge</Link>
+                <Link className="transition duration-500 ease-in-out hover:bg-[#161c2c] py-1.5 px-2.5 hover:text-white rounded-md" href="/">Home</Link>
+                <Link className="transition duration-500 ease-in-out hover:bg-[#161c2c] py-1.5 px-2.5 hover:text-white rounded-md" href="/vault">Vault</Link>
+                <Link className="transition duration-500 ease-in-out hover:bg-[#161c2c] py-1.5 px-2.5 hover:text-white rounded-md" href="/bridge">Bridge</Link>
             </div>
 
         </div>        
