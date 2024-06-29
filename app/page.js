@@ -1,6 +1,7 @@
 "use client"
 import React from 'react';
 import Header from "./components/Header"
+import Web3 from 'web3'
 import { SiWalletconnect } from "react-icons/si";
 import { FaDiscord } from "react-icons/fa";
 import { FaTelegram } from "react-icons/fa";
@@ -11,6 +12,19 @@ import { IoPieChartSharp } from "react-icons/io5";
 import { GiWallet } from "react-icons/gi";
 
 export default function Home() {
+      // to handle the event for connect wallet
+      let web3
+      const connectWalletHandler = () => {
+        // to check if metamask is installed
+        if(typeof window !== 'undefined' && typeof window.ethereum !== 'undefined') {
+          window.ethereum.request({ method: 'eth_requestAccounts'})
+          web3 = new Web3(window.ethereum)
+        }else {
+          //incase metamask is not installed
+          console.log('please install metamask')
+        }
+      }
+
   return (
     <main className='bg-[#0b1120]'>
       <Header />
@@ -20,7 +34,7 @@ export default function Home() {
         <p className="text-gray-300 mt-4 text-xs md:text-lg">Frysk enables you to Stake and Earn Maximun Yields <br /> through the Frax Protocol on the L2 Frax Blockchain in a seamless, pain free process.</p>        
       </section>      
       <div className="action-buttons flex justify-center mt-10 text-lg space-x-4 wiggly">
-        <button className="text-white border rounded-sm py-2 px-2 cursor-pointer transition duration-300 ease-in-out hover:text-blue-400 flex items-center space-x-2">
+        <button onClick={connectWalletHandler} className="text-white border rounded-sm py-2 px-2 cursor-pointer transition duration-300 ease-in-out hover:text-blue-400 flex items-center space-x-2">
         <p>Connect Wallet</p> <SiWalletconnect />  
         </button>           
         <button className="text-[#0b1120] font-bold bg-[#FFB07C] rounded-sm py-2 px-3 cursor-pointer transition duration-300 ease-in-out hover:text-white">
